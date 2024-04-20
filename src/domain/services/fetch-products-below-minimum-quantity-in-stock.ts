@@ -1,0 +1,12 @@
+import { ProductsRepository } from '../repositories/products-repository'
+
+export class FetchProductsBelowMinimumQuantityInStock {
+  constructor(private productsRepository: ProductsRepository) {}
+
+  async execute() {
+    const productsBellowMinimumQuantity =
+      await this.productsRepository.findAllBelowMinumumQuantity()
+
+    return productsBellowMinimumQuantity
+  }
+}
