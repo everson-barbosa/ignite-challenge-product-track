@@ -4,6 +4,8 @@ export interface ProductProps {
   name: string
   quantityInStock: number
   minimumQuantityInStock: number
+  size: string
+  color: string
   createdAt: Date
   updatedAt?: Date
 }

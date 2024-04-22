@@ -4,9 +4,9 @@ export class FetchProductsBelowMinimumQuantityInStock {
   constructor(private productsRepository: ProductsRepository) {}
 
   async execute() {
-    const productsBellowMinimumQuantity =
+    const productsBelowMinimumQuantity =
       await this.productsRepository.findAllBelowMinumumQuantity()
 
-    return productsBellowMinimumQuantity
+    return productsBelowMinimumQuantity
   }
 }
